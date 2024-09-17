@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "natural_essence",
+	"version": "${version}",
+	"name": "Natural Essence",
+	"description": "Natural Essence is a mod designed to expand the game's natural world by adding new biomes that blend seamlessly with the base game's existing environments. These new biomes enhance exploration while staying true to Minecraft's familiar style and feel!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/natural_essence/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shadow_phoenix.natural_essence.NaturalEssence"
+		],
+		"fabric-datagen": [
+			"net.shadow_phoenix.natural_essence.NaturalEssenceDataGenerator"
+		],
+		"Client": [
+			"net.shadow_phoenix.natural_essence.NaturalEssenceClient"
+		]
+	},
+	"mixins": [
+		"natural_essence.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

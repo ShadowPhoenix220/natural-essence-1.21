@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.shadow_phoenix.natural_essence.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
